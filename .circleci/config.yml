@@ -1,6 +1,8 @@
 version: 2
 jobs: 
-  build: 
+  build:
+    build:
+        machine: true 
     working_directory: ~/knn 
     steps:
       - checkout 
