@@ -1,0 +1,9 @@
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+.idea
+.ipynb_checkpoints
+
+# OS X garbage
+.DS_Store
