@@ -1,1 +1,12 @@
-
+version: 2
+jobs: 
+  build: 
+    working_directory: ~/knn 
+    steps:
+      - checkout 
+      - run: 
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
