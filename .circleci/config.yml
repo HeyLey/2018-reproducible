@@ -2,14 +2,14 @@ version: 2
 jobs: 
   build:
     machine: 
-	python:
-	    version: 3.5.2 
+        python:
+            version: 3.5.2 
     working_directory: ~/knn 
     steps:
       - checkout 
       - run: 
           name: install dependencies
           command: |
-            python3.5 -m venv venv
+            python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
