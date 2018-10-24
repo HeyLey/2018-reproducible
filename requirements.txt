@@ -61,7 +61,6 @@ Keras==2.2.0
 Keras-Applications==1.0.2
 Keras-Preprocessing==1.0.1
 kiwisolver==1.0.1
-llvmlite==0.23.2+1.g67a89c7
 locket==0.2.0
 lxml==3.6.0
 Markdown==2.6.11
