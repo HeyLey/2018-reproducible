@@ -1,6 +1,4 @@
 Bottleneck==1.2.1
-conda==4.3.16
-conda-build==2.1.5
 datashape==0.5.2
 h5py==2.8.0
 imageio==2.3.0
