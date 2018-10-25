@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 
 RUN sh get_html.sh
 
-RUN jupiter notebook
+RUN jupyter notebook
