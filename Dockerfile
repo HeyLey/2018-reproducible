@@ -1,17 +1,16 @@
-FROM ubuntu:16.04
+FROM python:3.7-slim
 
-RUN apt-get update
+RUN pip install --no-cache --upgrade pip && \
+    pip install --no-cache notebook
 
-RUN apt-get -y install python3-pip
 
-USER root
+ARG NB_USER
+ARG NB_UID
+ENV USER ${NB_USER}
+ENV HOME /home/${NB_USER}
 
-COPY requirements.txt /tmp
-COPY get_html.sh /tmp
-COPY knn.ipynb /tmp
-
-WORKDIR /tmp
- 
-RUN pip3 install -r requirements.txt        
-
-RUN sh get_html.sh
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+WORKDIR ${HOME}
