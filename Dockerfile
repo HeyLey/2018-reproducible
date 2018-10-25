@@ -19,3 +19,7 @@ COPY requirements.txt /${HOME}
 COPY get_html.sh /${HOME}
 COPY knn.ipynb /${HOME}
 
+RUN pip3 install -r requirements.txt        
+
+RUN sh get_html.sh
+
