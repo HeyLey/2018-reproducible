@@ -13,9 +13,9 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-COPY requirements.txt
-COPY get_html.sh 
-COPY knn.ipynb 
-
 WORKDIR ${HOME}
+
+COPY requirements.txt /${HOME}
+COPY get_html.sh /${HOME}
+COPY knn.ipynb /${HOME}
 
