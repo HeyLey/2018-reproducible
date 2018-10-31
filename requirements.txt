@@ -7,7 +7,6 @@ jupyter==1.0.0
 jupyter-client==4.3.0
 jupyter-console==4.1.1
 jupyter-core==4.1.0
-h5py==2.8.0
 imageio==2.3.0
 imagesize==0.7.1
 Keras==2.2.0
