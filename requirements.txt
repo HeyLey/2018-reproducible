@@ -25,6 +25,5 @@ scikit-image==0.13.1
 scikit-learn==0.19.1
 scipy==1.1.0
 tensorboard==1.9.0
-tensorflow
 termcolor==1.1.0
 tqdm==4.24.0
