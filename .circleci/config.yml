@@ -2,7 +2,7 @@ version: 2
 jobs: 
   build:
     machine: 
-      - image: circleci/python:3.5.2 
+       image: circleci/python:3.5.2 
     working_directory: ~/knn 
     steps:
       - checkout 
