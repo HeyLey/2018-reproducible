@@ -15,7 +15,7 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r requirements.txt
-            jupyter-nbconvert --ExecutePreprocessor.timeout=None --ExecutePreprocessor.kernel_name=python --execute knn.ipynb
+            jupyter nbconvert --to notebook --execute knn.ipynb jupyter-nbconvert --ExecutePreprocessor.kernel_name=python3
             sh get_html.sh
       - store_artifacts:
           path: ~/knn/knn.html
