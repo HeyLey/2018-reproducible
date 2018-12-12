@@ -18,6 +18,7 @@ WORKDIR ${HOME}
 COPY requirements.txt /${HOME}
 COPY get_html.sh /${HOME}
 COPY knn.ipynb /${HOME}
+COPY pos.h5 /${HOME}
 
 RUN pip3 install --no-cache -r requirements.txt  
 RUN pip3 install --no-cache -U $(pip freeze | cut -d '=' -f 1)      
